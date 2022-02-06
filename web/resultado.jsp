@@ -17,11 +17,12 @@
     <body>
     <h1>Hello World!</h1>
     <%
-        String n1=request.getParameter("num1");
-        String n2=request.getParameter("num2");
+        String n1=request.getParameter("ba");
+        String n2=request.getParameter("al");
         
         Triangulo s=new Triangulo(n1,n2);
-        s.hacerSuma();
+        s.area();
+        s.perimetro();
         int resultado=s.getResultado();
     %>
     <%=resultado%>
